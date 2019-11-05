@@ -1,0 +1,139 @@
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Arial, Helvetica, sans-serif
+
+=body-backgound-settings
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    overflow-x: hidden
+
+.time-night
+    background: linear-gradient(rgba(20,20,80,0.60),rgba(20,20,80,0.60)), url('../img/bg_night.png')
+    +body-backgound-settings
+
+.time-day
+    background: linear-gradient(rgba(20,20,80,0.60),rgba(20,20,80,0.60)), url('../img/bg_day.jpg')
+    +body-backgound-settings
+
+.time-sunrise
+    background: linear-gradient(rgba(20,20,80,0.60),rgba(20,20,80,0.60)), url('../img/bg_sunrise.jpg')
+    +body-backgound-settings
+
+.time-sunset
+    background: linear-gradient(rgba(20,20,80,0.60),rgba(20,20,80,0.60)), url('../img/bg_sunset.jpg')
+    +body-backgound-settings
+
+body
+    overflow-x: hidden
+
+.App
+    width: 100vw
+    height: 100vh
+    text-align: center
+
+.section--search-city
+    position: relative
+    min-height: calc(100vh - 60px)
+
+.section-100vh
+    min-height: calc(100vh - 60px)
+
+.centerY
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,  -50%)
+
+.search
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    width: 250px
+
+.input--text,
+.input--submit
+    border: 0px
+    border-bottom: 2px solid white
+    background-color: transparent
+    color: white
+    display: block
+    width: 250px
+    text-align: left
+    margin-top: 20px
+    font-size: 20px
+    padding-bottom: 5px
+
+.input--submit
+    width: auto
+
+.footer
+    padding: 20px
+    color: white
+
+.weather-for-next__parameters
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+
+.weather-for-next__parameters ul
+    list-style: none
+
+.weather-for-next__parameters li
+    text-align: left
+    margin: 0px 40px
+
+.padding-top--20px
+    padding-top: 20px
+
+.day-name
+    text-align: center
+
+.weather-for-next-days
+    margin-top: 20px
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+.weather-for-next-days__day
+    margin-bottom: 50px
+    width: 34%
+
+.chart
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    max-width: 1100px
+
+.weather-parameter-container__main
+    text-align: center
+    width: 25%
+
+.weather-icon
+    width: 150px
+    height: 150px
+
+.font-size--big
+    font-size: 30px
+
+.margin-top--50px
+    margin-top: 50px
+
+@media screen and ( min-width: 650px )
+    .weather-for-next-days__day
+        width: 33%
+
+@media screen and ( min-width: 1000px )
+    .weather-for-next-days
+        max-width: 1100px
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+
+    .weather-for-next-days__day
+        width: 20%

@@ -1,0 +1,42 @@
+.section--show-weather
+    padding-top: 50px
+
+.weather-parameter-container
+    padding-top: 20px
+    display: flex
+    flex-direction: column
+
+.section--show-weather__city-name span
+    display: block
+
+.section--show-weather__city-name--big
+    font-size: 30px
+    margin-bottom: 20px
+
+.weather-parameter
+    display: block
+
+.fas
+    margin-bottom: 10px
+
+@media screen and ( min-width: 450px )
+    .weather-parameter-container
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+
+    .weather-parameter
+        width: 45%
+
+@media screen and ( min-width: 900px )
+    .weather-parameter-container
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        max-width: 1100px
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+
+    .weather-parameter
+        width: 25%
