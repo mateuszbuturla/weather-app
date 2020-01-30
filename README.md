@@ -1,4 +1,4 @@
-# Japan Tour
+# Weather.App
 
 ### Used Technologies
 ![Html](https://raw.githubusercontent.com/mateuszbuturla/readme-icons/master/icons/HTML_Logo.png)
